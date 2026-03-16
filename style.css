@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Great1;
+    src: url(/fonts/Montserrat-VariableFont_wght.ttf);
+}
+body {
+    padding: 20px;
+    background-color: hsl(240, 14%, 90%);
+    text-align: center;
+    font-family: Great1; 
+}
+#text {
+    h2 {
+        color: hsl(232, 13%, 33%);
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+}
+.color-txt {
+    color: hsl(233, 13%, 49%);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+}
+/* Toggle container */
+.switch {
+   position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px; 
+  margin-top: 20px; 
+}
+/* Looks like it dosent have any active function  */
+/* .switch input {
+  display: none;
+} */
+
+/* Background bar */
+.slider {
+  position: absolute;
+   cursor: pointer;
+  background-color: #ccc;
+  border-radius: 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+/* The circle inside */
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 2.5px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+/* When checked */
+input:checked + .slider {
+  background-color: #6c63ff; 
+}
+
+/* Move the circle */
+input:checked + .slider::before {
+  transform: translateX(24px);
+  background-color: black;
+}
+
+.container {
+  margin-top: 20px;
+  border-radius: 7px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.first-container {
+  background-color: hsl(240, 78%, 98%);
+  box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.391); 
+  color: hsl(232, 13%, 33%);
+  margin-top: 40px;
+  h4 {
+    font-size: 24px;
+  }
+}
+#basic {
+  font-size: 70px;
+  font-weight: 700;  
+  margin-top: 12px;
+  small {
+    font-size: 35px;
+  }
+}
+#border-container {
+  border-top: 1px solid hsl(233, 13%, 49%);
+  margin-top: 10px;
+  span h3 {
+    padding: 20px;
+    
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+  }
+}
+#learn-more {
+  cursor: pointer;
+  border: 0;
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  width: 80%;
+  border-radius: 7px;
+ background: linear-gradient(to right,hsl(237, 73%, 79%),hsl(238, 63%, 64%));
+h5 {
+  letter-spacing: 3px;
+  color: hsl(240, 78%, 98%);
+
+}
+}
+#learn-more:hover {
+  border: 1px solid hsl(237, 73%, 79%);
+  background: linear-gradient(to left, white, white);
+  color: red;
+  h5 {
+    color: hsl(237, 73%, 79%);
+  }
+}
+.second-container {
+  background-color: hsl(238, 63%, 64%);
+  padding: 20px;
+  color: hsl(240, 78%, 98%);
+  h4 {
+    font-size: 20px;
+    
+  }
+}
+#professional {
+  font-size: 70px;
+  font-weight: 700;
+  small {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+#border-container2 {
+  margin-top: 10px;
+  border-top: 1px solid hsl(240, 14%, 90%);
+  span h3 {
+    border-bottom: 1px solid hsl(240, 14%, 90%);
+    padding: 20px;
+  }
+}
+#learn-more2 {
+  border: 0px ;
+  width: 80%;
+  border-radius: 7px;
+  padding: 20px;
+  margin-top: 20px;
+  color: hsl(237, 73%, 79%);
+  font-size: 23px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+#learn-more2:hover {
+  border: 1px solid hsl(240, 14%, 90%);
+  background: linear-gradient(to left, hsl(238, 63%, 64%),hsl(238, 63%, 64%) );
+  h5 {
+    color: hsl(240, 14%, 90%);
+  }
+}
+#master {
+   font-size: 70px;
+  font-weight: 700;  
+  margin-top: 12px;
+  small {
+    font-size: 35px;
+  }
+}
+
+@media (min-width:1010px) {
+  #container-of-containers {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  button {
+    cursor: pointer;
+  }
+}

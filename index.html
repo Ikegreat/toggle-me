@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Price Toogle Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <span id="text">
+   <h2> Our Pricing</h2>
+ </span>
+<div class="toggle-container">
+<span class="color-txt">Annually</span>
+
+<label class="switch">
+  <input type="checkbox" id="togglePrice">
+  <span class="slider"></span>
+</label>
+
+<span class="color-txt">Monthly</span>
+</div>
+<!-- Container of the 3 cards -->
+<div id="container-of-containers">
+
+  <!-- First container comes in here -->
+   <div class="container first-container">
+    <h4>Basic</h4>
+    <span id="basic">
+      <small>$</small>19.99
+    </span>
+    <div id="border-container">
+      <span><h3>
+        500 GB Storage
+      </h3></span>
+      <span>
+        <h3>
+          2 Users Allowed
+        </h3>
+      </span>
+      <span>
+        <h3>
+          Send Up To 3 GB
+        </h3>
+      </span>
+    </div>
+    <button id="learn-more">
+      <h5>LEARN MORE</h5>
+    </button>
+   </div>
+
+   <!-- Second container -->
+    <div class="container second-container">
+      <h4>Professional</h4>
+      <div id="professional">
+        <small>$</small>24.99        
+      </div>
+      <div id="border-container2">
+        <span>
+          <h3>
+            1 TB Storage
+          </h3>
+        </span>
+        <span><h3>
+          5 Users Allowed 
+        </h3></span>
+        <span>
+          <h3>Send Up to 10 GB</h3>
+        </span>
+      </div>
+      <button id="learn-more2">
+        <h5>LEARN MORE</h5>
+      </button>
+    </div>
+
+    <!-- Third container -->
+       <div class="container first-container">
+    <h4>Master</h4>
+    <span id="master">
+      <small>$</small>39.99
+    </span>
+    <div id="border-container">
+      <span><h3>
+        2 GB Storage
+      </h3></span>
+      <span>
+        <h3>
+          10 Users Allowed
+        </h3>
+      </span>
+      <span>
+        <h3>
+          Send Up To 20 GB
+        </h3>
+      </span>
+    </div>
+    <button id="learn-more">
+      <h5>LEARN MORE</h5>
+    </button>
+     </div>
+</div>
+<script src="index.js"></script>
+</body>
